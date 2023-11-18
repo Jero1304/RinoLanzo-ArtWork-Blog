@@ -1,0 +1,70 @@
+<nav
+  class="navbar navbar-expand-lg"
+  [ngClass]="darkMode == true ? 'bg-dark-mode' : 'bg-light-mode'"
+>
+  <div class="container">
+    <a class="navbar-brand" (click)="disabledItem('hero')">Rino Lanzo</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div
+      class="collapse navbar-collapse justify-content-end"
+      id="navbarNavAltMarkup"
+    >
+      <div class="navbar-nav flex-row justify-content-center gap-4">
+        <a
+          class="nav-link"
+          (click)="disabledItem('about')"
+          [class.disabled-link]="about"
+          >Home</a
+        >
+        <a
+          class="nav-link"
+          (click)="disabledItem('curriculum-vitae')"
+          [class.disabled-link]="curriculum"
+          >CV</a
+        >
+        <a
+          class="nav-link"
+          (click)="disabledItem('contact')"
+          [class.disabled-link]="contact"
+          >Contatti</a
+        >
+        <a class="nav-link">Galleria</a>
+
+        <div class="form-check form-switch d-flex align-items-center m-0">
+          <input
+            class="form-check-input"
+            [ngClass]="darkMode == true ? 'dark-mode' : 'light-mode'"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckDefault"
+            (click)="toggleDarkMode()"
+          />
+          <label
+            *ngIf="darkMode == true"
+            class="form-check-label"
+            for="flexSwitchCheckDefault"
+            >Dark-mode
+          </label>
+          <label
+            *ngIf="darkMode == false"
+            class="form-check-label"
+            for="flexSwitchCheckDefault"
+            >Light-mode
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,186 @@
+@import '../../../styles'
+a
+    text-decoration: none
+    color: currentColor
+ul, ol, li
+    list-style: none
+    padding: 0
+    margin: 0
+
+.bg-light-mode
+    // background-color: #8b2d35d8
+    background-color: #69a804b6
+    transition: 0.3s ease-in-out
+.bg-dark-mode
+    background-color: $greenDark
+    transition: 0.3s ease-in-out
+.contact-footer
+    padding: 30px 20px
+    transition: 0.3s ease-in-out
+    .contact-title
+        color: white
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 40px
+        font-size: 40px
+
+    .contact
+        display: flex
+        // flex-direction: row
+        justify-content: center
+        align-items: flex-start
+        color: white
+        width: 70%
+        flex-wrap: wrap
+        margin: 0 auto
+        .contact-item
+            display: flex
+            // flex-direction: column
+            align-items: center
+            justify-content: center
+            cursor: pointer
+            width: 40%
+            padding: 20px
+            margin: 0 10px 20px 10px
+            height: 150px
+            // border: 3px solid white
+            border-radius: 20px
+            // margin: 14px 0
+            .contact-card-zoom
+                transform: scale(1.2) translateY(-10px)
+                // opacity: 1!important
+                margin-top: 20px
+                position: relative
+                transition: 0.3s ease-in-out
+            .contact-card
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                // background-color: $cyan
+                max-width: 200px
+                padding: 10px
+                max-height: 130px
+                font-size: 16px
+                text-align: center
+                font-size: 24px
+                // border-radius: 20px
+                margin-bottom: 30px
+                font-weight: bold
+                transition: 0.3s ease-in-out
+                .contact-item-title
+                    margin-bottom: 6px
+                    font-size: 20px
+                .hand-click
+                    position: absolute
+                    right: 0px
+                    bottom: -12px
+                    font-size: 18px
+                    border-radius: 999px
+                    padding: 4px
+                    font-size: 24px
+                .contact-icon
+                    // background-color: $cyan
+                    font-size: 40px
+                    border-radius: 10px
+                    transition: 0.3s ease-in-out
+                .mail
+                    margin-bottom: 6px
+                    font-size: 28px
+                    color: white
+                    background-color: $yellow
+                    border-radius: 10px
+                    padding: 5px
+                    transition: 0.3s ease-in-out
+                .instagram
+                    margin-bottom: 6px
+                    padding: 5px
+                    font-size: 30px
+                    border-radius: 10px
+                    background: #f09433
+                    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)
+                    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)
+                    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 )
+                    transition: 0.3s ease-in-out
+                .location
+                    margin-bottom: 6px
+                    font-size: 30px
+                    height: 40px
+                    width: 40px
+                    color: red
+                    padding: 5px
+                    border-radius: 10px
+                    background-color: $cyanDark
+                    transition: 0.3s ease-in-out
+                .phone
+                    margin-bottom: 6px
+                    font-size: 30px
+                    height: 40px
+                    width: 40px
+                    color: white
+                    padding: 5px
+                    border-radius: 10px
+                    background-color: $green
+                    transition: 0.3s ease-in-out
+                .clicca-mail
+                    font-size: 20px
+                    font-weight: bold
+                    background-color: $yellow
+                    padding: 5px
+                    border-radius: 10px
+                    color: white
+                    transition: 0.3s ease-in-out
+                .clicca-insta
+                    font-size: 20px
+                    font-weight: bold
+                    background: #f09433
+                    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)
+                    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)
+                    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 )
+                    padding: 5px
+                    border-radius: 10px
+                    color: white
+                    transition: 0.3s ease-in-out
+                .clicca-loca
+                    font-size: 20px
+                    font-weight: bold
+                    background-color: red
+                    padding: 5px
+                    border-radius: 10px
+                    color: white
+                    transition: 0.3s ease-in-out
+                .clicca-phone
+                    font-size: 20px
+                    font-weight: bold
+                    background-color: $green
+                    padding: 5px
+                    border-radius: 10px
+                    color: white
+                    transition: 0.3s ease-in-out
+    @media screen and (max-width: 768px)
+        .contact
+            width: 100%
+
+    @media screen and (max-width: 576px)
+        .contact
+            width: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            color: white
+            .contact-item
+                border-bottom: 3px solid white
+                border-radius: 0
+                height: 200px
+                padding: 10px
+                margin: 10px 0
+                &:last-child
+                    border-bottom: none
+                .contact-card
+                    // width: 70%
+                    height: 100%
+                    padding: 20px 0 0 0

@@ -1,0 +1,46 @@
+@import '../../../styles'
+.navbar
+    position: fixed
+    z-index: 999
+    width: 100%
+    & *
+        color: white
+    .navbar-brand
+        font-size: 30px
+        cursor: pointer
+.bg-dark-mode
+    background-color: $cyanDark
+    transition: 0.3s ease-in-out
+
+.bg-light-mode
+    background-color: $cyan
+    transition: 0.3s ease-in-out
+
+.nav-link
+    cursor: pointer
+    padding: 5px
+    border-radius: 50%
+    transition: 0.3s ease-in-out
+.disabled-link
+    color: $cyanDark!important
+    font-weight: bold
+    background-color: white
+    box-shadow: 0px 0px 15px 0px white
+    border-radius: 50%
+    transition: 0.3s ease-in-out
+.form-check
+    .form-check-label
+        margin-bottom: -3px!important
+    .form-check-input
+        box-shadow: none!important
+        transition: 0.3s ease-in-out
+    .dark-mode
+        border: none !important
+        border-color: $cyan!important
+        background-color: $darkBG!important
+        transition: 0.3s ease-in-out
+    .light-mode
+        border: none !important
+        border-color: $cyanDark!important
+        background-color: white!important
+        transition: 0.3s ease-in-out
