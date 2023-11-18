@@ -6,6 +6,39 @@
   <main>
     <app-about id="about-section"></app-about>
     <app-curriculum id="cv-section"></app-curriculum>
+    <div class="galleria container py-5">
+      <div
+        class="d-flex justify-content-center flex-row gap-2 align-items-center flex-wrap"
+      >
+        <img
+          width="150px"
+          class=""
+          [src]="
+            darkMode == false
+              ? '../assets/salvatorelanzoQR (1).png'
+              : '../assets/salvatorelanzoQR (2).png'
+          "
+          alt="www.salvatorelanzo.eu"
+        />
+
+        <div
+          style="height: 150px"
+          class="d-flex justify-content-start flex-column gap-2 align-items-start py-2"
+        >
+          <a
+            href="https://www.salvatorelanzo.eu/"
+            target="_blank"
+            class="btn text-uppercase"
+            [ngClass]="darkMode == false ? 'btn-primary' : 'btn-light'"
+          >
+            guarda la mia galleria completa
+          </a>
+          <a href="https://www.salvatorelanzo.eu/" target="_blank"
+            >https://www.salvatorelanzo.eu</a
+          >
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
     <app-contact-footer id="contact-section"></app-contact-footer>

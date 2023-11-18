@@ -11,8 +11,6 @@ import { ContactFooterComponent } from './componenti/contact-footer/contact-foot
 import { AboutComponent } from './componenti/about/about.component';
 import { ImageSliderSideComponent } from './componenti/about/image-slider-side/image-slider-side.component';
 import { CurriculumComponent } from './componenti/curriculum/curriculum.component';
-import { PortfolioComponent } from './componenti/portfolio/portfolio.component';
-import { OperaDettaglioComponent } from './componenti/portfolio/opera-dettaglio/opera-dettaglio.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +21,6 @@ import { OperaDettaglioComponent } from './componenti/portfolio/opera-dettaglio/
     AboutComponent,
     ImageSliderSideComponent,
     CurriculumComponent,
-    PortfolioComponent,
-    OperaDettaglioComponent
   ],
   imports: [
     BrowserModule,
